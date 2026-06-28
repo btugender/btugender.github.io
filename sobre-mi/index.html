@@ -6,6 +6,22 @@
   <title>Sobre mí — Benjamín Tugender</title>
   <meta name="description" content="Psicólogo, investigador, autor y co-fundador del ICCF y Comportarte Behavioral Group.">
   <link rel="stylesheet" href="../assets/style.css">
+  <style>
+    .perfil { display: grid; grid-template-columns: 280px 1fr; gap: 56px; align-items: start; max-width: 960px; margin: 0 auto; padding: 52px 40px 64px; }
+    .perfil__foto { width: 280px; height: 280px; object-fit: cover; object-position: top; border-radius: 4px; }
+    .perfil__nombre { font-family: 'Playfair Display', Georgia, serif; font-size: 36px; font-weight: 700; margin-bottom: 6px; }
+    .perfil__cargo { font-size: 13px; color: #888; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 28px; }
+    .perfil p { font-family: 'Source Serif 4', Georgia, serif; font-size: 17px; line-height: 1.75; color: #444; font-weight: 300; margin-bottom: 1.4em; }
+    .perfil h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 20px; font-weight: 700; color: #1A1A1A; margin: 2em 0 0.8em; }
+    .perfil ul { list-style: none; padding: 0; }
+    .perfil ul li { font-family: 'Source Serif 4', Georgia, serif; font-size: 16px; line-height: 1.65; color: #555; font-weight: 300; padding: 8px 0; border-bottom: 0.5px solid #D0CEC8; }
+    .perfil ul li:last-child { border-bottom: none; }
+    .perfil a { text-decoration: underline; text-underline-offset: 3px; }
+    @media (max-width: 720px) {
+      .perfil { grid-template-columns: 1fr; gap: 28px; padding: 36px 20px 48px; }
+      .perfil__foto { width: 160px; height: 160px; }
+    }
+  </style>
 </head>
 <body>
 
@@ -23,43 +39,47 @@
 
   <div class="dateline">Benjamín Tugender &nbsp;·&nbsp; Buenos Aires, Argentina</div>
 
-  <div class="sobre-mi">
+  <div class="perfil">
+    <div>
+      <img class="perfil__foto" src="../assets/foto-perfil.jpg" alt="Benjamín Tugender">
+    </div>
+    <div>
+      <h1 class="perfil__nombre">Benjamín Tugender</h1>
+      <p class="perfil__cargo">Psicólogo · Autor · Investigador</p>
 
-    <h1>Sobre mí</h1>
+      <p>Estudiante avanzado de Psicología y Ciencias del Comportamiento en la Universidad de Palermo. Autor de cuatro libros sobre psicología conductual y terapias contextuales. Mi trabajo integra el análisis funcional, ACT y Process-Based Therapy como marcos para entender y cambiar el comportamiento humano.</p>
 
-    <p>Soy psicólogo clínico, investigador y autor. Me especializo en terapias contextuales y de tercera generación — en particular ACT (Terapia de Aceptación y Compromiso) y el modelo de Procesos Basados en la Evidencia. Estoy cursando la Licenciatura en Psicología y la Licenciatura en Ciencias del Comportamiento en la Universidad de Palermo, con formación clínica supervisada en el Centro Privado de Psicoterapias (CPP).</p>
+      <p>Realizo práctica clínica supervisada en el Centro Privado de Psicoterapias (CPP) y soy miembro del ACBS Chapter Argentino. Co-fundé el ICCF (Instituto de Ciencias Conductuales Funcionales), Comportarte Behavioral Group y Flexium, con el objetivo de acercar la psicología basada en evidencia a profesionales y comunidades hispanohablantes.</p>
 
-    <p>Co-fundé el <strong>ICCF</strong> (Instituto de Ciencias Conductuales Funcionales), <strong>Comportarte Behavioral Group</strong> y <strong>Flexium</strong>, con el objetivo de acercar la psicología basada en evidencia a profesionales y comunidades hispanohablantes.</p>
+      <p>Publiqué además un artículo científico en Elsevier sobre contextualismo funcional y conductismo radical.</p>
 
-    <p>Publiqué cuatro libros y un artículo científico en Elsevier, y participo activamente en la comunidad ACBS (Association for Contextual Behavioral Science) como miembro del Capítulo Argentina.</p>
+      <h2>Formación</h2>
+      <ul>
+        <li>Licenciatura en Psicología — Universidad de Palermo (en curso)</li>
+        <li>Licenciatura en Ciencias del Comportamiento — Universidad de Palermo (en curso)</li>
+        <li>Diplomatura en TCC Contemporáneas — UBA</li>
+        <li>Formación en AFC — enGrama</li>
+        <li>Práctica clínica supervisada — CPP, Dr. Usandivaras</li>
+      </ul>
 
-    <h2>Formación</h2>
-    <ul>
-      <li>Licenciatura en Psicología — Universidad de Palermo (en curso)</li>
-      <li>Licenciatura en Ciencias del Comportamiento — Universidad de Palermo (en curso)</li>
-      <li>Diplomatura en TCC Contemporáneas — UBA</li>
-      <li>Formación en AFC — enGrama</li>
-      <li>Práctica clínica supervisada — CPP, bajo supervisión de Dr. Usandivaras</li>
-    </ul>
+      <h2>Proyectos</h2>
+      <ul>
+        <li><a href="https://iccf.ar" target="_blank">ICCF — Instituto de Ciencias Conductuales Funcionales</a></li>
+        <li><a href="https://comportarte.com" target="_blank">Comportarte Behavioral Group</a></li>
+        <li><a href="https://flexiumpsi.github.io" target="_blank">Flexium</a></li>
+      </ul>
 
-    <h2>Proyectos</h2>
-    <ul>
-      <li><a href="https://iccf.ar" target="_blank" style="text-decoration: underline; text-underline-offset: 3px;">ICCF — Instituto de Ciencias Conductuales Funcionales</a></li>
-      <li><a href="https://comportarte.com" target="_blank" style="text-decoration: underline; text-underline-offset: 3px;">Comportarte Behavioral Group</a></li>
-      <li><a href="https://flexiumpsi.github.io" target="_blank" style="text-decoration: underline; text-underline-offset: 3px;">Flexium</a></li>
-    </ul>
-
-    <h2>Contacto</h2>
-    <ul>
-      <li>Instagram: <a href="https://instagram.com/benjatugender" target="_blank" style="text-decoration: underline; text-underline-offset: 3px;">@benjatugender</a></li>
-      <li>Email: btugender.psi@gmail.com</li>
-    </ul>
-
+      <h2>Contacto</h2>
+      <ul>
+        <li>Instagram: <a href="https://instagram.com/benjatugender" target="_blank">@benjatugender</a></li>
+        <li>Email: btugender.psi@gmail.com</li>
+      </ul>
+    </div>
   </div>
 
   <footer class="site-footer">
     <div class="site-footer__inner">
-      <span class="site-footer__copy">© 2026 Benjamín Tugender · btugender.com</span>
+      <span class="site-footer__copy">© 2026 Benjamín Tugender · btugender.github.io</span>
       <ul class="site-footer__links">
         <li><a href="https://iccf.ar" target="_blank">ICCF</a></li>
         <li><a href="https://comportarte.com" target="_blank">Comportarte</a></li>

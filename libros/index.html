@@ -4,8 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Libros — Benjamín Tugender</title>
-  <meta name="description" content="Los cuatro libros publicados por Benjamín Tugender.">
+  <meta name="description" content="Los cuatro libros publicados por Benjamín Tugender sobre psicología conductual y terapias contextuales.">
   <link rel="stylesheet" href="../assets/style.css">
+  <style>
+    .libros-page { max-width: 1080px; margin: 0 auto; padding: 52px 40px 64px; }
+    .libros-page h1 { font-family: 'Playfair Display', Georgia, serif; font-size: 36px; font-weight: 700; margin-bottom: 48px; }
+    .libros-lista { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 48px; }
+    .libro { display: flex; flex-direction: column; }
+    .libro__tapa { width: 100%; aspect-ratio: 2/3; object-fit: cover; border-radius: 2px; box-shadow: 4px 6px 16px rgba(0,0,0,0.18); margin-bottom: 20px; transition: transform 0.2s; }
+    .libro__tapa:hover { transform: translateY(-4px); }
+    .libro__num { font-size: 10px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: #888; margin-bottom: 8px; font-family: 'Inter', sans-serif; }
+    .libro__titulo { font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 700; line-height: 1.3; color: #1A1A1A; margin-bottom: 10px; border-top: 2px solid #1A1A1A; padding-top: 14px; }
+    .libro__desc { font-family: 'Source Serif 4', Georgia, serif; font-size: 13px; line-height: 1.65; color: #666; font-weight: 300; }
+    @media (max-width: 720px) {
+      .libros-page { padding: 36px 20px 48px; }
+      .libros-lista { grid-template-columns: repeat(2, 1fr); gap: 28px; }
+    }
+  </style>
 </head>
 <body>
 
@@ -23,32 +38,36 @@
 
   <div class="dateline">Publicaciones &nbsp;·&nbsp; Benjamín Tugender</div>
 
-  <div class="libros">
+  <div class="libros-page">
     <h1>Libros</h1>
-    <div class="libros-grid">
+    <div class="libros-lista">
 
-      <div class="libro-card">
-        <div class="libro-card__num">01</div>
-        <h2 class="libro-card__title">El Precio de la Demanda</h2>
-        <p class="libro-card__desc">Una exploración del comportamiento humano frente a las exigencias del entorno contemporáneo.</p>
+      <div class="libro">
+        <img class="libro__tapa" src="../assets/libro-01-precio-demanda.png" alt="El Precio de la Demanda">
+        <div class="libro__num">01</div>
+        <h2 class="libro__titulo">El Precio de la Demanda</h2>
+        <p class="libro__desc">Aceptación, compromiso y sacrificio detrás de nuestras decisiones. Una exploración del comportamiento humano frente a las exigencias del entorno contemporáneo.</p>
       </div>
 
-      <div class="libro-card">
-        <div class="libro-card__num">02</div>
-        <h2 class="libro-card__title">No Creas en Soluciones Mágicas</h2>
-        <p class="libro-card__desc">Una crítica al pensamiento mágico y una defensa del cambio basado en evidencia y proceso.</p>
+      <div class="libro">
+        <img class="libro__tapa" src="../assets/libro-02-soluciones-magicas.png" alt="No Creas en Soluciones Mágicas">
+        <div class="libro__num">02</div>
+        <h2 class="libro__titulo">No Creas en Soluciones Mágicas</h2>
+        <p class="libro__desc">El porqué, cómo y cuándo la psicología clínica dejó de ser científica. Una crítica al pensamiento mágico y una defensa del cambio basado en evidencia.</p>
       </div>
 
-      <div class="libro-card">
-        <div class="libro-card__num">03</div>
-        <h2 class="libro-card__title">La Psicopatología en Jaque</h2>
-        <p class="libro-card__desc">Una revisión crítica del modelo diagnóstico tradicional desde el contextualismo funcional.</p>
+      <div class="libro">
+        <img class="libro__tapa" src="../assets/libro-03-psicopatologia.png" alt="La Psicopatología en Jaque">
+        <div class="libro__num">03</div>
+        <h2 class="libro__titulo">La Psicopatología en Jaque</h2>
+        <p class="libro__desc">¿Y si la salud mental tal como la conocemos estuviera enferma? Una lectura crítica desde el Contextualismo Funcional.</p>
       </div>
 
-      <div class="libro-card">
-        <div class="libro-card__num">04</div>
-        <h2 class="libro-card__title">Des-Regulados</h2>
-        <p class="libro-card__desc">Sobre la regulación emocional, la flexibilidad psicológica y el rol del contexto en el malestar.</p>
+      <div class="libro">
+        <img class="libro__tapa" src="../assets/libro-04-desregulados.png" alt="Des-Regulados">
+        <div class="libro__num">04</div>
+        <h2 class="libro__titulo">Des-Regulados</h2>
+        <p class="libro__desc">Ansiedad, estrés y depresión en tiempos de hiperexigencia. Sobre la regulación emocional y la flexibilidad psicológica como respuesta al malestar contemporáneo.</p>
       </div>
 
     </div>
@@ -56,7 +75,7 @@
 
   <footer class="site-footer">
     <div class="site-footer__inner">
-      <span class="site-footer__copy">© 2026 Benjamín Tugender · btugender.com</span>
+      <span class="site-footer__copy">© 2026 Benjamín Tugender · btugender.github.io</span>
       <ul class="site-footer__links">
         <li><a href="https://iccf.ar" target="_blank">ICCF</a></li>
         <li><a href="https://comportarte.com" target="_blank">Comportarte</a></li>
