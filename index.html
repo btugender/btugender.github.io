@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benjamín Tugender</title>
+  <meta name="description" content="Psicólogo, investigador y autor. Conducta & Contexto — columna semanal sobre comportamiento humano aplicado al mundo contemporáneo.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="site-nav__inner">
+      <a href="/" class="site-nav__logo">Benjamín Tugender <em>·</em></a>
+      <ul class="site-nav__links">
+        <li><a href="/" class="active">Inicio</a></li>
+        <li><a href="columna/">Conducta & contexto</a></li>
+        <li><a href="libros/">Libros</a></li>
+        <li><a href="sobre-mi/">Sobre mí</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="dateline" id="dateline">btugender.com &nbsp;·&nbsp; Buenos Aires, Argentina</div>
+
+  <section class="hero">
+    <div class="hero__kicker"><span>Conducta & contexto</span> &nbsp;— columna semanal</div>
+    <h1 class="hero__headline">El mapa del trabajo que viene: qué carreras sobreviven a la IA y cuáles no</h1>
+    <p class="hero__deck">Un análisis de datos cruzados entre el Foro Económico Mundial, Microsoft y Randstad Argentina revela patrones incómodos — y algunas sorpresas.</p>
+    <p class="hero__meta"><strong>Benjamín Tugender</strong> &nbsp;·&nbsp; 29 de junio, 2026 &nbsp;·&nbsp; <a href="columnas/2026-06-29-carreras-ia.html" style="text-decoration:underline; text-underline-offset:3px;">Leer columna →</a></p>
+  </section>
+
+  <div class="rule--thick"></div>
+  <div class="rule"></div>
+
+  <div class="section-label"><span class="section-label__text">Columnas anteriores</span></div>
+
+  <div class="columnas-grid">
+    <div class="columna-card">
+      <div class="columna-card__kicker">Tecnología & sociedad</div>
+      <h2 class="columna-card__title"><a href="columnas/2026-06-22-derecho-economia-administracion.html">Derecho, economía y administración ante la automatización</a></h2>
+      <p class="columna-card__body">Las tres carreras que el mercado saturó de generalistas y el perfil que realmente cotiza en 2026.</p>
+      <p class="columna-card__date">22 de junio, 2026</p>
+    </div>
+    <div class="columnas-grid__divider"></div>
+    <div class="columna-card">
+      <div class="columna-card__kicker">Ciencias del comportamiento</div>
+      <h2 class="columna-card__title"><a href="#">Por qué decidimos mal aunque sabemos mejor</a></h2>
+      <p class="columna-card__body">Sesgos cognitivos, contextualismo funcional y la diferencia entre saber y hacer.</p>
+      <p class="columna-card__date">15 de junio, 2026</p>
+    </div>
+    <div class="columnas-grid__divider"></div>
+    <div class="columna-card">
+      <div class="columna-card__kicker">Psicología aplicada</div>
+      <h2 class="columna-card__title"><a href="#">Etiquetar para tratar: el problema del diagnóstico en salud mental</a></h2>
+      <p class="columna-card__body">Qué pasa cuando el mapa reemplaza al territorio en la clínica cotidiana.</p>
+      <p class="columna-card__date">8 de junio, 2026</p>
+    </div>
+  </div>
+
+  <div class="rule"></div>
+
+  <div class="suscripcion">
+    <div class="suscripcion__inner">
+      <div>
+        <div class="suscripcion__label">Columna semanal</div>
+        <div class="suscripcion__nombre">Conducta & contexto</div>
+        <div class="suscripcion__sub">Comportamiento humano aplicado al mundo contemporáneo · todos los domingos</div>
+      </div>
+      <form class="suscripcion__form" onsubmit="return false;">
+        <input class="suscripcion__input" type="email" placeholder="tu@email.com">
+        <button class="suscripcion__btn">Suscribirse →</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <span class="site-footer__copy">© 2026 Benjamín Tugender · btugender.com</span>
+      <ul class="site-footer__links">
+        <li><a href="https://iccf.ar" target="_blank">ICCF</a></li>
+        <li><a href="https://comportarte.com" target="_blank">Comportarte</a></li>
+        <li><a href="https://flexiumpsi.github.io" target="_blank">Flexium</a></li>
+        <li><a href="libros/">Libros</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    const d = new Date();
+    const dias = ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'];
+    const meses = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+    document.getElementById('dateline').textContent = `${dias[d.getDay()]} ${d.getDate()} de ${meses[d.getMonth()]}, ${d.getFullYear()} · Buenos Aires, Argentina`;
+  </script>
+
+</body>
+</html>
